@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UpFinances | Gerenciador Financeiro Inteligente</title>
+  <meta name="description" content="Landing page oficial do UpFinances, gerenciador financeiro com dashboard em tempo real, planos Free e Basic, relatórios em PDF e suporte completo.">
+  <link rel="icon" type="image/png" href="web-app-manifest-512x512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+  <div class="bg-layer" aria-hidden="true">
+    <span class="orb orb-left"></span>
+    <span class="orb orb-right"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <header class="site-header" id="topo">
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <img class="brand-logo" src="web-app-manifest-512x512.png" alt="Logo UpFinances">
+      <span class="brand-text">UpFinances</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu de navegação">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#inicio">Início</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#precos">Preços</a>
+      <a href="#suporte">Suporte</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Alternar para tema escuro">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-text" id="themeToggleText">Light</span>
+    </button>
+
+    <a class="btn btn-primary nav-cta" href="https://upfinances.vercel.app/auth">Começar</a>
+  </header>
+
+  <main>
+    <section class="section hero" id="inicio">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Gerenciador financeiro pessoal.</p>
+        <h1>Tome decisões melhores com dados financeiros em tempo real.</h1>
+        <p class="hero-text">
+          O UpFinances conecta autenticação, dashboard completo, gestão de transações e planos de assinatura
+          para você acompanhar entradas, saídas, metas e relatórios em um único painel.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#precos">Ver planos</a>
+          <a class="btn btn-secondary" href="#funcionalidades">Explorar recursos</a>
+        </div>
+        <ul class="hero-points">
+          <li>Cadastro, login e recuperação de senha.</li>
+          <li>Controle de acesso por plano e limites mensais.</li>
+          <li>Exportação de relatórios em PDF.</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <article class="dashboard-card">
+          <header class="dashboard-head">
+            <p>Resumo financeiro</p>
+            <span class="status-pill">Online</span>
+          </header>
+
+          <div class="metrics-grid">
+            <div>
+              <small>Saldo atual</small>
+              <strong data-count="24890" data-prefix="R$ ">0</strong>
+            </div>
+            <div>
+              <small>Entradas</small>
+              <strong data-count="9200" data-prefix="+ R$ ">0</strong>
+            </div>
+            <div>
+              <small>Saídas</small>
+              <strong data-count="6300" data-prefix="- R$ ">0</strong>
+            </div>
+            <div>
+              <small>Taxa de economia</small>
+              <strong>31%</strong>
+            </div>
+          </div>
+
+          <div class="chart-bars" aria-label="Despesas por categoria">
+            <span style="--h: 72%"></span>
+            <span style="--h: 45%"></span>
+            <span style="--h: 56%"></span>
+            <span style="--h: 35%"></span>
+            <span style="--h: 62%"></span>
+          </div>
+
+          <div class="recent-list">
+            <p>Transações recentes</p>
+            <ul>
+              <li><span>Recebimento de cliente</span><b>+ R$ 2.400</b></li>
+              <li><span>Aluguel do escritório</span><b>- R$ 1.800</b></li>
+              <li><span>Assinatura de software</span><b>- R$ 120</b></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="funcionalidades">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Funcionalidades essenciais</p>
+        <h2>Ferramentas completas para sua rotina financeira.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card" data-reveal>
+          <span class="chip">/dashboard</span>
+          <h3>Dashboard completo</h3>
+          <p>Visualize saldo, entradas, saídas, taxa de economia, transações recentes e despesas por categoria.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">/transactions</span>
+          <h3>Gestão de transações</h3>
+          <p>Crie, edite, exclua e faça exclusão em lote com regras de limite mensal por plano.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">Filtros</span>
+          <h3>Análise por período</h3>
+          <p>Filtre por período, tipo e categoria para acompanhar resultados com mais precisão.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">Tempo real</span>
+          <h3>Indicadores vivos</h3>
+          <p>Cálculo de indicadores financeiros em tempo real para apoiar decisões rápidas.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">PDF</span>
+          <h3>Relatórios exportáveis</h3>
+          <p>Gere extratos e relatórios financeiros em PDF para compartilhar e arquivar.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">/plan-prices</span>
+          <h3>Planos e assinaturas</h3>
+          <p>Fluxo de checkout, upgrade de plano e regras de renovação com aplicação imediata ou agendada.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">/account</span>
+          <h3>Conta e meta mensal</h3>
+          <p>Acompanhe meta de economia, consumo do plano e atualizações da conta em um painel único.</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="chip">/suport</span>
+          <h3>Suporte com FAQ</h3>
+          <p>Atendimento com FAQ dinâmico para respostas rápidas e resolução de dúvidas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Benefícios</p>
+        <h2>Mais controle, menos tempo perdido.</h2>
+      </div>
+
+      <div class="benefits-layout">
+        <article class="benefits-panel" data-reveal>
+          <h3>Fluxo pensado para resultado</h3>
+          <ol class="benefit-list">
+            <li>Registre entradas, saídas e parcelamentos com categoria, banco e data.</li>
+            <li>Acompanhe desempenho em um dashboard único com filtros inteligentes.</li>
+            <li>Defina meta mensal e compare sua taxa de economia em tempo real.</li>
+            <li>Exporte relatórios em PDF e mantenha histórico profissional.</li>
+          </ol>
+        </article>
+
+        <article class="plan-compare" data-reveal>
+          <div class="compare-head">
+            <h3>Free vs Basic</h3>
+            <div class="compare-switch" role="tablist" aria-label="Comparação de planos">
+              <button class="switch-btn active" data-plan="free" aria-selected="true">Free</button>
+              <button class="switch-btn" data-plan="basic" aria-selected="false">Basic</button>
+            </div>
+          </div>
+          <p class="muted" id="planSubtitle"></p>
+          <ul class="plan-feature-list" id="planFeatures"></ul>
+          <a class="btn btn-primary" id="planCta" href="#precos">Ver plano</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-pricing" id="precos">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Preços</p>
+        <h2>Escolha o plano ideal para seu momento.</h2>
+      </div>
+
+      <div class="billing-toggle" data-reveal>
+        <span>Mensal</span>
+        <label class="switch" for="billingToggle">
+          <input id="billingToggle" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <span>Anual, com <strong>2 meses de economia</strong>.</span>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card" data-reveal>
+          <h3>Free</h3>
+          <p>Para quem quer organizar as finanças e começar sem custo.</p>
+          <div class="price-line">
+            <span class="currency">R$</span>
+            <strong class="price" data-monthly="0" data-yearly="0">0</strong>
+            <span class="period" data-monthly="/mês" data-yearly="/ano">/mês</span>
+          </div>
+          <ul>
+            <li>Cadastro, login e recuperação de senha.</li>
+            <li>Dashboard financeiro e filtros básicos.</li>
+            <li>Limite mensal de transações por plano.</li>
+            <li>FAQ dinâmico e suporte padrão.</li>
+          </ul>
+          <a class="btn btn-secondary" href="https://upfinances.vercel.app/auth">Entrar no Free</a>
+        </article>
+
+        <article class="price-card featured" data-reveal>
+          <span class="featured-tag">Mais escolhido</span>
+          <h3>Basic</h3>
+          <p>Para quem precisa de mais produtividade e análise profissional.</p>
+          <div class="price-line">
+            <span class="currency">R$</span>
+            <strong class="price" data-monthly="29" data-yearly="290">29</strong>
+            <span class="period" data-monthly="/mês" data-yearly="/ano">/mês</span>
+          </div>
+          <ul>
+            <li>Tudo do Free, com maior limite de transações.</li>
+            <li>Exclusão em lote e gestão avançada de histórico.</li>
+            <li>Relatórios financeiros exportáveis em PDF.</li>
+            <li>Controle de acesso e regras de assinatura completas.</li>
+          </ul>
+          <a class="btn btn-primary" href="https://upfinances.vercel.app/auth">Assinatura Basic</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="suporte">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Suporte</p>
+        <h2>Atendimento rápido quando você precisar.</h2>
+      </div>
+
+      <div class="support-layout">
+        <article class="support-cards" data-reveal>
+          <div class="support-card">
+            <h3>FAQ dinâmico</h3>
+            <p>Respostas imediatas para dúvidas frequentes sobre contas, planos e transações.</p>
+          </div>
+          <div class="support-card">
+            <h3>Equipe especializada</h3>
+            <p>Suporte para onboarding, ajustes de plano e orientação de uso no dia a dia.</p>
+          </div>
+          <div class="support-card">
+            <h3>Conta segura</h3>
+            <p>Fluxos de autenticação completos com recuperação e redefinição de senha.</p>
+          </div>
+        </article>
+
+        <article class="support-direct" data-reveal>
+          <h3>Fale com a nossa equipe no WhatsApp.</h3>
+          <p>Atendimento direto para dúvidas sobre recursos, planos e acesso ao sistema.</p>
+          <a class="btn btn-primary" href="https://wa.me/5585921670029?text=Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20sistema" target="_blank" rel="noopener noreferrer">
+            Chamar no WhatsApp
+          </a>
+          <small>Número: (85) 92167-0029</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-faq" id="faq">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" aria-expanded="false">O plano Free permite cadastrar transações?</button>
+          <div class="faq-answer">
+            <p>Sim. O Free permite cadastro e gestão básica de transações, respeitando o limite mensal definido para o plano.</p>
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" aria-expanded="false">Consigo exportar relatórios em PDF?</button>
+          <div class="faq-answer">
+            <p>Sim. O UpFinances oferece exportação de relatórios financeiros em PDF para organização e compartilhamento.</p>
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" aria-expanded="false">Como funciona a troca de plano?</button>
+          <div class="faq-answer">
+            <p>A troca de plano pode ser aplicada de forma imediata ou agendada, conforme regras de assinatura e renovação.</p>
+          </div>
+        </article>
+        <article class="faq-item" data-reveal>
+          <button class="faq-question" aria-expanded="false">Existe controle por permissão de plano?</button>
+          <div class="faq-answer">
+            <p>Sim. O sistema controla acesso a telas e funcionalidades conforme o plano ativo da conta.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-section" data-reveal>
+      <h2>Pronto para organizar sua vida financeira?</h2>
+      <p>Comece no Free e evolua para o Basic quando precisar de mais produtividade.</p>
+      <a class="btn btn-primary" href="https://upfinances.vercel.app/auth">Criar conta agora</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>(c) <span id="year"></span> UpFinances. Todos os direitos reservados.</p>
+    <a href="#topo">Voltar ao topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
